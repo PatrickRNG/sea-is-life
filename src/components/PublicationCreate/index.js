@@ -1,9 +1,35 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import './style.scss';
 import Button from '../Button';
 import { BlueCalendar } from '../../assets/icons/index';
 
-function PublicationCreate() {
+function PublicationCreate({setFeatures, features, history}) {
+
+  const handleSubmit = function() {
+    const newFeature =  [...features, {
+      type: "Feature",
+      properties: {
+        description: `
+          <div className="tooltip">
+            <b>Patrick Passarella</b>
+            <p>Costa Rica, RJ</p>
+            <p>Coral-Sol identificado na costa próximo a Praia do Forte.</p>
+            <a href="/publication">Visualizar<a>
+          </div>
+        `,
+        icon: "coral"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-2.449900, -22.996700]
+      }
+    }];
+    
+    setFeatures(newFeature);
+    history.push('/');
+  }
+
   return (
     <div className="publicationCreateWrapper">
       <h2>Publicar</h2>
@@ -25,11 +51,11 @@ function PublicationCreate() {
           <input className="input" />
           <h3>Descrição</h3>
           <input className="description input" />
-          <Button text="Publicar" />
+          <Button onClick={handleSubmit} text="Publicar" />
         </div>
       </div>
     </div>
   );
 }
 
-export default PublicationCreate;
+export default withRouter(PublicationCreate);
