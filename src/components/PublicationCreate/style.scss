@@ -1,0 +1,56 @@
+.publicationCreateWrapper {
+  width: 100%;
+  padding: 30px;
+  color: #34333A;
+  
+  h2 {
+    font-weight: 300;
+    font-size: 26px;
+    margin-left: 40px;
+  }
+
+  .divider {
+    height: 1px;
+    background-color: #B7B7B7;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .content {
+    display: flex;
+    margin-left: 40px;
+
+    h3 {
+      font-weight: 300;
+    }
+    
+    .left {
+      margin-right: 100px;
+
+      .titleMap {
+        margin-top: 40px;
+      }
+
+      .dateInput {
+        margin-left: 20px;
+        border-radius: 3px;
+      }
+
+    }
+
+    .right {
+      .description {
+        margin-bottom: 60px;
+        display: block;
+      }
+    }
+
+    .input {
+      padding: 10px;
+      background: none;
+      border: 1px solid #000;
+      outline: none;
+    }
+  }
+  
+}

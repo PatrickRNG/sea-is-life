@@ -1,0 +1,33 @@
+.button {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: rgb(75, 177, 251);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .2s;
+  display: inline-block;
+  border: none;
+
+  &:hover {
+    background-color: rgba(75, 177, 251, 0.9);
+  }
+}
+
+.inputFile {
+  input {
+    display: none;
+
+  }
+  label {
+    border: none;
+    background: none;
+    background-color: rgb(75, 177, 251);
+    padding: 10px 30px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(75, 177, 251, 0.9);
+    }
+  }
+}

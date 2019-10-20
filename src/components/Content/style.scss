@@ -1,0 +1,128 @@
+#mapPlaceholder {
+  width: 100%;
+  height: 100%;
+}
+
+.tooltip {
+  p {
+    margin: 0;
+  }
+}
+
+#marker {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .coordinates {
+    padding: 8px;
+    position: absolute;
+    font-weight: 200;
+    width: 420px;
+    left: 12px;
+    bottom: 10px;
+    color: #fff;
+    background-color: rgba(196, 196, 196, 0.8);
+    z-index: 999;
+  }
+}
+
+// .map {
+//   width: 100%;
+//   background-image: url('../../assets/img/map.png');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   position: relative;
+
+//   img {
+//     width: 100%;
+//     height: 100%;
+//   }
+
+//   .clickable {
+//     width: 50px;
+//     height: 50px;
+//     position: absolute;
+//     top: 200px;
+//     left: 200px;
+//     margin-top: -50px;
+//     margin-left: -50px;
+//     background-color: #ddd;
+//     z-index: 1;
+//   }
+
+//   .modal {
+//     position: absolute;
+//     right: 0;
+//     width: 430px;
+//     background-color: rgba(52, 51, 58, 0.9);
+
+//     h3 {
+//       color: #D0D0D0;
+//       padding: 0 20px;
+//     }
+
+//     .publicationItem {
+//       display: flex;
+//       color: #D0D0D0;
+//       padding: 20px;
+//       border-top: 1px solid #676767;
+//       background-color: rgba(52, 51, 58, 0.9);
+//       cursor: pointer;
+
+//       &:hover {
+//         background-color: rgba(52, 51, 58, 1);
+//       }
+
+//       p {
+//         padding: 0;
+//         margin: 0;
+//       }
+
+//       .left {
+//         width: 60%;
+//         font-size: 14px;
+
+//         .name {
+//           font-size: 18px;
+//         }
+
+//         .address {
+//           margin-bottom: 10px;
+//         }
+
+//         .description {
+//           width: 80%;
+//         }
+//       }
+
+//       .right {
+//         display: flex;
+//         flex-direction: column;
+//         width: 40%;
+//         align-items: flex-end;
+
+//         svg {
+//           cursor: pointer;
+//           width: 20px;
+//           height: 20px;
+//         }
+
+//         .date {
+//           margin-top: auto;
+//         }
+//       }
+//     }
+//   }
+// }
